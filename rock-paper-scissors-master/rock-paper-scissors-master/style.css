@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+
 :root{
 --textColor: hsl(229, 25%, 31%);
 --scoreColor: hsl(229, 64%, 46%);
@@ -14,6 +16,8 @@ body{
     background: radial-gradient(at top,hsl(214, 47%, 23%), hsl(237, 49%, 15%));
     height: 100vh;
     overflow: hidden;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    letter-spacing: 2px;
 
 }
 
@@ -26,6 +30,7 @@ header{
     padding: 15px;
     max-width: 600px;
     align-items: center;
+    margin-top: 50px;
 }
 
 .score {
@@ -47,11 +52,84 @@ header{
 
 }
 
+main{
+    margin: 0 auto;
+    max-width: 600px;
+    height: 70vh;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 150px;
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+}
+.game {
+  aspect-ratio: 313 / 278;
+    background-image: url("./images/bg-triangle.svg");
+    background-size: cover;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.game button{
+    cursor: pointer;
+    position: absolute;
+    height: 80%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 20px solid ;
+}
+
+.paperbtn{
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+
+}
+
+.scissorsbtn{
+    right: 0;
+    top: 0;
+    transform: translate(50%, -50%);
+}
+
+.rockbtn{
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.rules{
+   position: fixed;
+   right: 30px;
+
+}
+
+.rulesbtn{
+    background: none;
+    color: white;
+    border: 2px solid var(--borderColor);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 30px;
+    letter-spacing: 2px;
+}
 
 
 
 
 
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 
 .attribution { font-size: 11px; text-align: center; }
     
