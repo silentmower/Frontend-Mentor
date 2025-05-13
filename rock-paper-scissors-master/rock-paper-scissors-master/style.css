@@ -17,7 +17,8 @@
 
 body{
     background: radial-gradient(at top,hsl(214, 47%, 23%), hsl(237, 49%, 15%));
-    height: 100vh;
+    min-height: 100vh;
+    min-width: 100vw;
     overflow: hidden;
     font-family: "Barlow Semi Condensed", sans-serif;
     letter-spacing: 2px;
@@ -146,10 +147,12 @@ section {
   justify-content: space-between;
   align-items: center;
   max-width: 600px;
+  width: 1000%;
+  aspect-ratio: 1/1;
   margin: 0 auto;
   padding: 0 auto;
   color: white;
-  margin-top: -150px;
+
 }
 
 .picked {
@@ -181,8 +184,7 @@ section {
     display: block;
     width: 100%;
     text-align: center;
-    font-size: 14px;
-    letter-spacing: 1px;
+    font-size: 24px;
 }
 
 .placeholder {
