@@ -49,6 +49,7 @@ header{
     color: var(--textColor);
     display: block;
     line-height: 50px;
+    text-align: center;
 }
 
 .score-title {
@@ -146,8 +147,8 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 600px;
-  width: 1000%;
+  max-width: 800px;
+  width: 100%;
   aspect-ratio: 1/1;
   margin: 0 auto;
   padding: 0 auto;
@@ -194,7 +195,9 @@ section {
   background: rgba(0, 0, 0, 0.3);
 }
 
-
+.hidden {
+    display: none;
+}
 
 
 
